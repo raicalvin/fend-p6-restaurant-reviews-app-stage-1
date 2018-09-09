@@ -65,7 +65,8 @@ section {
   color: #aaa;
   font-size: 8pt;
   letter-spacing: 1px;
-  padding: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -264,21 +265,21 @@ nav h1 a {
   font-size: 12pt;
   font-weight: 300;
   letter-spacing: 10px;
-  margin: 0 0 20px;
+  /*margin: 0 0 20px;*/
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-  width: 90%;
+  width: 100%;
 }
 #restaurant-container,
 #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
+  /*padding: 140px 40px 30px;*/
   width: 50%;
 }
 #reviews-container {
-  padding: 30px 40px 80px;
+  /*padding: 30px 40px 80px;*/
 }
 #reviews-container h2 {
   color: #f58500;
@@ -311,11 +312,70 @@ nav h1 a {
 
 /* ===================== Media Queries ===================== */
 
-@media screen and (max-width: 1100px) {
+@media screen and (min-width: 676px) {
   #restaurants-list {
     grid-template-columns: auto auto;
     align-items: auto;
     max-width: 1100px;
+  }
+
+  /*MEDIA QUERIES FOR RESTAURANT DETAIL PAGE*/
+  #restaurant-img {
+    max-width: 100%;
+    padding: 25px;
+    border-radius: 50px 0 50px 0;
+    margin-top: 50px;
+  }
+  #restaurant-address {
+    margin-left: 25px;
+  }
+  #restaurant-hours {
+    margin-left: 25px;
+    margin-bottom: 25px;
+  }
+  #reviews-container {
+    margin-left: 25px;
+  }
+  #reviews-list > li > p:nth-child(1) {
+    float: left;
+    font-size: 18px;
+    padding-left: 25px;
+    color: #eee;
+    margin-bottom: 0px;
+    margin-top: 18px;
+  }
+  #reviews-list > li > p:nth-child(2) {
+    text-align: right;
+    background-color: #333333;
+    padding-right: 25px;
+    padding-top: 25px;
+    color: white;
+    margin-bottom: 18px;
+  }
+  #reviews-list > li > p:nth-child(3) {
+    display: inline;
+    margin-left: 25px;
+    background: orange;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 8px;
+    color: white;
+  }
+  #reviews-list > li > p:nth-child(4) {
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    margin-top: 15px;
+  }
+  #reviews-list li {
+    padding: 0px;
+    border-radius: 25px 0 25px 0;
+  }
+  .inside #footer {
+    position: initial;
+    width: 50%;
   }
 }
 
@@ -327,5 +387,84 @@ nav h1 a {
   }
   .filter-options {
     height: 150px;
+  }
+
+  /*TEST QUERY FOR RESTAURANT DETAIL PAGE*/
+  .inside #map-container {
+    background: blue none repeat scroll 0 0;
+    height: 350px; /*87px*/
+    width: 100%;
+    position: relative;
+    margin-top: 51px;
+  }
+  #reviews-container {
+    width: 100%;
+    position: initial;
+    margin-left: 25px;
+  }
+  #breadcrumb {
+    width: 100%;
+  }
+  .leaflet-container {
+    background-color: black;
+    position: absolute;
+    z-index: 10;
+  }
+  #restaurant-container {
+    width: 100%;
+    position: static;
+  }
+  #restaurant-img {
+    max-width: 100%;
+    padding: 25px;
+    border-radius: 50px 0 50px 0;
+  }
+  #restaurant-address {
+    margin-left: 25px;
+  }
+  #restaurant-hours {
+    margin-left: 25px;
+    margin-bottom: 25px;
+  }
+  #reviews-list > li > p:nth-child(1) {
+    float: left;
+    font-size: 18px;
+    padding-left: 25px;
+    color: #eee;
+    margin-bottom: 0px;
+    margin-top: 18px;
+  }
+  #reviews-list > li > p:nth-child(2) {
+    text-align: right;
+    background-color: #333333;
+    padding-right: 25px;
+    padding-top: 25px;
+    color: white;
+    margin-bottom: 18px;
+  }
+  #reviews-list > li > p:nth-child(3) {
+    display: inline;
+    margin-left: 25px;
+    background: orange;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 8px;
+    color: white;
+  }
+  #reviews-list > li > p:nth-child(4) {
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    margin-top: 15px;
+  }
+  #reviews-list li {
+    padding: 0px;
+    border-radius: 25px 0 25px 0;
+  }
+  .inside #footer {
+    position: initial;
+    width: 100%;
   }
 }
