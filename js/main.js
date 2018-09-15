@@ -164,6 +164,7 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
 /**
  * Create restaurant HTML.
  */
+let tabIndexNum = 0;
 createRestaurantHTML = restaurant => {
   const li = document.createElement("li");
 
@@ -188,6 +189,7 @@ createRestaurantHTML = restaurant => {
   const more = document.createElement("a");
   more.innerHTML = "View Details";
   more.href = DBHelper.urlForRestaurant(restaurant);
+  more.tabIndex = `${++tabIndexNum}`; /*HEERRRREEEEE*/
   li.append(more);
 
   return li;
