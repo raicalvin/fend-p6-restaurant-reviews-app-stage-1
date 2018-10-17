@@ -1,32 +1,65 @@
-# Mobile Web Specialist Certification Course
----
-#### _Three Stage Course Material Project - Restaurant Reviews_
+# Restaurant Reviews App
 
-## Project Overview: Stage 1
+## Project Information
 
-For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
+### About
 
-### Specification
+This application is a fictional restaurant review site where the user is able to filter from a set of local restaurants and explore the reviews. The application is fully responsive, includes ARIA elements to make it accessibility-friendly, and utilizes a service worker to be able to store local files and provide an offline experience.
 
-You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality. 
+### Concepts
 
-### What do I do from here?
+Concepts, skills, and technologies used in this project were...
 
-1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer. 
+- Service workers for offline usability
+- Media queries for responsive designs across various screen sizes
+- Accessibility features for impaired users
 
-In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
+## Getting Started
 
-2. With your server running, visit the site: `http://localhost:8000`, and look around for a bit to see what the current experience looks like.
-3. Explore the provided code, and start making a plan to implement the required features in three areas: responsive design, accessibility and offline use.
-4. Write code to implement the updates to get this site on its way to being a mobile-ready website.
+This application used a back-end server to display the proper map and information regarding restaurants. To run the application, make sure to download the files and follow the instructions below.
 
-## Leaflet.js and Mapbox:
+### Downloading
 
-This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). You need to replace `<your MAPBOX API KEY HERE>` with a token from [Mapbox](https://www.mapbox.com/). Mapbox is free to use, and does not require any payment information. 
+You may download the application files using your terminal with the following command:
 
-### Note about ES6
+```
+git clone "https://github.com/raicalvin/fend-p6-restaurant-reviews-app-stage-1.git"
+```
 
-Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write. 
+### Running
 
+You may setup a basic Python server on a localHost to run this application. The Python command to run the server depends on your version of Python:
 
+For Python 2.X, run the following command in your terminal once you have CD'ed into the app folder:
 
+```
+python -m SimpleHTTPServer 8000
+```
+
+For Python 3.X, run the following command:
+
+```
+python3 -m http.server 8000
+```
+
+You can then open a blank browser tab and route to:
+
+```
+http://localhost:8000
+```
+
+## Issues
+
+- Issue 1 - The Leafletjs and MapBox libraries are not properly setup for this project. You can include an API key of your own, but one is not provided as the scope of the project revolved solely on making the site responsive, updating the styles, including a service worker for offline use, and updating the code to meet accessibility standards.
+
+## Authors
+
+- Calvin S Rai - _Developer_ - [GitHub](https://github.com/raicalvin)
+
+## Contact
+
+My name is Calvin! :]
+
+Check out my other work here on [GitHub](https://github.com/raicalvin).
+
+You can also reach me by [email](mailto:raicalvin@gmail.com)!
